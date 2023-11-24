@@ -25,8 +25,8 @@ const AddTopicForm = () => {
 
       if (res.ok) {
         console.log("Successfully posted");
-        router.push("/");
         router.refresh();
+        router.push("/");
       }
     } catch (error) {
       throw Error("Error:", error);
