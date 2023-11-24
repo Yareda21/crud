@@ -1,8 +1,8 @@
 import AddTopicForm from "@/components/AddTopicForm";
 import React from "react";
 
-const page = () => {
+const addTopic = () => {
   return <AddTopicForm />;
 };
 
-export default page;
+export default addTopic;

@@ -16,7 +16,7 @@ const getTopicById = async (id) => {
     console.log(error);
   }
 };
-export default async function page({ params }) {
+export default async function editTopic({ params }) {
   const { id } = params;
   const { topic } = await getTopicById(id);
   const { title, description } = topic;
