@@ -15,7 +15,7 @@ const AddTopicForm = () => {
     }
 
     try {
-      const res = await fetch("http://yared-crud.vercel.app/api/topics", {
+      const res = await fetch("http://localhost:3000/api/topics", {
         method: "POST",
         headers: {
           "content-type": "application/json",
