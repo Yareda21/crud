@@ -15,7 +15,7 @@ const AddTopicForm = () => {
     }
 
     try {
-      const res = await fetch("http://localhost:3000/api/topics", {
+      const res = await fetch("/api/topics", {
         method: "POST",
         headers: {
           "content-type": "application/json",
@@ -25,8 +25,8 @@ const AddTopicForm = () => {
 
       if (res.ok) {
         console.log("Successfully posted");
-        router.refresh();
         router.push("/");
+        router.refresh();
       }
     } catch (error) {
       throw Error("Error:", error);
